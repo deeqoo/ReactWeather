@@ -14,7 +14,7 @@ module.exports = {
         return res.data.main.temp;
       }
     }, function(err){
-      throw new Error(error.data.message);
+      throw new Error(err.data.message);
     })
 
   }
